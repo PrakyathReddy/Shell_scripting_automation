@@ -10,3 +10,8 @@ I have created a shell script where I will connect to AWS to to pull and list ac
 region can be us-east-1, ap-south-1, etc.
 resource-type can be ec2, s3, ebs, etc.
 
+#### Implementation of the script
+
+Step 1: Validate the command
+Make sure 2 arguments (region and resource) are provided, and also that they are valid. 
+
