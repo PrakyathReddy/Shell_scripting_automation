@@ -32,3 +32,8 @@ if [ "$#" -ne 2 ]; then
 fi
 # $0 is the script name; -ne means "not equal to"; $# is the number of arguments passed; Exit 1 means exit with error code 1. Error code 1 means general error
 
+# check if AWS CLI is installed
+if ! command -v aws &> /dev/null; then
+    echo "AWS CLI not found. Please install AWS CLI to use this script."
+    exit 1
+fi
