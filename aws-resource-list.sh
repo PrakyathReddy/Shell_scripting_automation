@@ -37,3 +37,10 @@ if ! command -v aws &> /dev/null; then
     echo "AWS CLI not found. Please install AWS CLI to use this script."
     exit 1
 fi
+
+# check if AWS CLI is configured
+if [ ! -d "~/.aws" ]; then
+    echo "AWS is not configured. Please configure AWS CLI to use this script."
+    exit 1
+fi
+
