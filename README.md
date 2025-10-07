@@ -23,3 +23,11 @@ Every service of AWS has it's own API's.
 Instead of directly making API call to AWS, use the AWs CLI. Shell script will talk to AWS CLI, and AWS CLI will talk to AWS account. 
 Similarly, for Python, we use a module called  boto3
 
+install aws cli: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions
+
+configure aws cli: https://docs.aws.amazon.com/cli/latest/userguide/cli-authentication-user.html
+
+Example: 
+
+$ ./aws-resource-list.sh us-east-1 ec2
+i-04022cfdaf0049e5b | t3.micro | running | 107.22.115.189 | 172.31.24.113  |
